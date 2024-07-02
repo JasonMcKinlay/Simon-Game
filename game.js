@@ -50,6 +50,8 @@ function select(button) {
     new Audio("sounds/" + button.attr("id") + ".mp3").play();
 }
 
+// Given any number n in the sequence, compare the user's nth button to the game pattern's nth button
+// Upon the final button successful, continue to next level and restart algorithm
 function checkAnswer() {
     if (userClickedPattern[userClickedPattern.length-1] == gamePattern[userClickedPattern.length-1]) {
         console.log("success");
